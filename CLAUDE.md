@@ -69,6 +69,15 @@ curl http://localhost:8080/api/jobs/{job_id}
    ```
    Or use a bash script (`.sh`) instead of Python
 
+### MCP Integration (Claude Code & OpenCode):
+
+If you're using Claude Code or OpenCode, you can optionally install the **GPU Manager MCP server** for direct tool integration:
+- Submit jobs through conversation (no curl commands needed)
+- Monitor jobs in real-time
+- List GPU availability
+
+**Setup:** See `training/GPU_MANAGER_REFERENCE.md` → MCP Setup section
+
 ### Full documentation:
 
 **GPU & Training:**
