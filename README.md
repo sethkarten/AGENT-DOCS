@@ -36,7 +36,7 @@ This repository contains standardized documentation for AI coding agents (Claude
 
 ```bash
 cd ~/Research/your-project
-git clone git@github.com:YOUR_USERNAME/agent-docs.git
+git clone git@github.com:sethkarten/AGENT-DOCS.git
 ```
 
 **Then copy the main file to your project root:**
@@ -66,7 +66,7 @@ cp agent-docs/CLAUDE.md .claude.md
 
 ```bash
 cd ~/Research/your-project
-curl -O https://raw.githubusercontent.com/YOUR_USERNAME/agent-docs/main/CLAUDE.md
+curl -O https://raw.githubusercontent.com/sethkarten/AGENT-DOCS/main/CLAUDE.md
 mv CLAUDE.md .claude.md
 ```
 

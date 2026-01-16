@@ -4,7 +4,7 @@
 
 ```bash
 cd ~/Research/your-project
-git clone git@github.com:YOUR_USERNAME/agent-docs.git
+git clone git@github.com:sethkarten/AGENT-DOCS.git
 cp agent-docs/CLAUDE.md .claude.md
 ```
 
@@ -23,7 +23,7 @@ for project in ~/Research/*/; do
         if [ -d "agent-docs" ]; then
             cd agent-docs && git pull && cd ..
         else
-            git clone git@github.com:YOUR_USERNAME/agent-docs.git
+            git clone git@github.com:sethkarten/AGENT-DOCS.git
         fi
 
         # Copy main file
@@ -85,7 +85,7 @@ If you don't want the full repo:
 
 ```bash
 cd ~/Research/your-project
-curl -O https://raw.githubusercontent.com/YOUR_USERNAME/agent-docs/main/CLAUDE.md
+curl -O https://raw.githubusercontent.com/sethkarten/AGENT-DOCS/main/CLAUDE.md
 mv CLAUDE.md .claude.md
 ```
 

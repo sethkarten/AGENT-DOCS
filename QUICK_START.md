@@ -6,7 +6,7 @@
 cd /media/milkkarten/data/agent-docs-repo
 
 # Create repo on GitHub, then:
-git remote add origin git@github.com:YOUR_USERNAME/agent-docs.git
+git remote add origin git@github.com:sethkarten/AGENT-DOCS.git
 git branch -M main
 git push -u origin main
 ```
@@ -15,7 +15,7 @@ git push -u origin main
 
 Edit `install_to_project.sh` and replace:
 ```bash
-REPO_URL="git@github.com:YOUR_USERNAME/agent-docs.git"
+REPO_URL="git@github.com:sethkarten/AGENT-DOCS.git"
 ```
 
 ## 3️⃣ Install to Your Projects
@@ -34,7 +34,7 @@ cp agent-docs/CLAUDE.md .claude.md
 for project in ~/Research/*/; do
     if [ -d "$project/.git" ]; then
         cd "$project"
-        git clone git@github.com:YOUR_USERNAME/agent-docs.git 2>/dev/null || (cd agent-docs && git pull)
+        git clone git@github.com:sethkarten/AGENT-DOCS.git 2>/dev/null || (cd agent-docs && git pull)
         cp agent-docs/CLAUDE.md .claude.md
         echo "✓ Installed to $(basename $project)"
     fi

@@ -263,5 +263,5 @@ cat .claude.md              # Symlinks to agent-docs/CLAUDE.md
 ---
 
 **Last Updated:** 2026-01-15
-**Repository:** https://github.com/YOUR_USERNAME/agent-docs
+**Repository:** https://github.com/sethkarten/AGENT-DOCS
 **Maintained by:** GPU Manager + Writing Assistant systems

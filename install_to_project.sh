@@ -5,7 +5,7 @@
 
 PROJECT_DIR="${1:-.}"
 MODE="${2:-submodule}"
-REPO_URL="git@github.com:YOUR_USERNAME/agent-docs.git"  # UPDATE THIS!
+REPO_URL="git@github.com:sethkarten/AGENT-DOCS.git"
 
 if [ ! -d "$PROJECT_DIR" ]; then
     echo "Error: Project directory '$PROJECT_DIR' does not exist"
@@ -79,4 +79,5 @@ esac
 echo ""
 echo "Agent documentation ready! AI agents can now:"
 echo "  - Submit GPU training jobs"
-echo "  - Access detailed guides in agent-docs/gpu_manager/"
+echo "  - Access detailed guides in agent-docs/training/"
+echo "  - Use writing guides in agent-docs/writing/"
