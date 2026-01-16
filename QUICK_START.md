@@ -74,7 +74,7 @@ cp agent-docs/CLAUDE.md .claude.md  # Re-copy if needed
 |------|---------|
 | `AGENTS.md` | Main instructions read by AI agents |
 | `README.md` | Human-readable setup guide |
-| `gpu_manager/*.md` | Detailed guides for training/optimization |
+| `training/*.md` | Detailed guides for training/optimization |
 | `update_from_source.sh` | Sync from GPU Manager source |
 | `install_to_project.sh` | Install to individual projects |
 

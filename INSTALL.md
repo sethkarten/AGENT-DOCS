@@ -46,11 +46,11 @@ your-project/
 ├── agent-docs/                 ← Full documentation repo
 │   ├── CLAUDE.md              ← Main instructions
 │   ├── FILE_MAP.md            ← Index of all guides
-│   ├── gpu_manager/           ← GPU scheduling guides
+│   ├── training/           ← GPU scheduling guides
 │   │   ├── TRAINING_AGENT_GUIDE.md
 │   │   ├── LLM_OPTIMIZATION_GUIDE.md
 │   │   └── GPU_MANAGER_REFERENCE.md
-│   └── agents/                ← Writing guides (19 files)
+│   └── writing/                ← Writing guides (19 files)
 │       ├── STYLE_GUIDE.md
 │       ├── WRITING_ASSISTANT.md
 │       └── ...

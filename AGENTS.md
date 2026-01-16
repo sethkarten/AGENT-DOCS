@@ -1,8 +1,8 @@
 # AI Agent Instructions
 
 > **📋 Complete Guide Index:** See [FILE_MAP.md](FILE_MAP.md) for all available documentation
-> - GPU & Training: `gpu_manager/` directory
-> - Writing & Research: `agents/` directory
+> - GPU & Training: `training/` directory
+> - Writing & Research: `writing/` directory
 
 ---
 
@@ -72,12 +72,12 @@ curl http://localhost:8080/api/jobs/{job_id}
 ### Full documentation:
 
 **GPU & Training:**
-- Training Best Practices: `gpu_manager/TRAINING_AGENT_GUIDE.md`
-- LLM Optimization: `gpu_manager/LLM_OPTIMIZATION_GUIDE.md`
-- Quick Reference: `gpu_manager/GPU_MANAGER_REFERENCE.md`
+- Training Best Practices: `training/TRAINING_AGENT_GUIDE.md`
+- LLM Optimization: `training/LLM_OPTIMIZATION_GUIDE.md`
+- Quick Reference: `training/GPU_MANAGER_REFERENCE.md`
 
 **Writing & Research:**
-- Style Guide: `agents/STYLE_GUIDE.md` - NeurIPS academic writing
-- Writing Assistant: `agents/WRITING_ASSISTANT.md` - Drafting papers
-- Review Loop: `agents/AGENT_LOOP.md` - Polishing drafts
-- See [FILE_MAP.md](FILE_MAP.md) for complete agent index (19 writing guides)
+- Style Guide: `writing/STYLE_GUIDE.md` - NeurIPS academic writing
+- Writing Assistant: `writing/WRITING_ASSISTANT.md` - Drafting papers
+- Review Loop: `writing/AGENT_LOOP.md` - Polishing drafts
+- See [FILE_MAP.md](FILE_MAP.md) for complete index (19 writing guides)

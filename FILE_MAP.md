@@ -18,7 +18,7 @@
 
 ## 🖥️ GPU & Training Guides
 
-**Location:** `gpu_manager/`
+**Location:** `training/`
 
 ### Core GPU Scheduling
 
@@ -48,7 +48,7 @@
 
 ## ✍️ Writing & Research Agents
 
-**Location:** `agents/`
+**Location:** `writing/`
 
 ### Core Writing System
 
@@ -154,8 +154,8 @@
 ```bash
 # Reference these files:
 1. CLAUDE.md / AGENTS.md          # Main entry point
-2. gpu_manager/TRAINING_AGENT_GUIDE.md  # Training workflow
-3. gpu_manager/LLM_OPTIMIZATION_GUIDE.md  # If using LLMs
+2. training/TRAINING_AGENT_GUIDE.md  # Training workflow
+3. training/LLM_OPTIMIZATION_GUIDE.md  # If using LLMs
 ```
 
 ### For Academic Writing Projects
@@ -163,9 +163,9 @@
 ```bash
 # Reference these files:
 1. CLAUDE.md / AGENTS.md          # Main entry point
-2. agents/STYLE_GUIDE.md          # Writing principles
-3. agents/WRITING_ASSISTANT.md    # Orchestration
-4. agents/AGENT_LOOP.md           # Review process
+2. writing/STYLE_GUIDE.md          # Writing principles
+3. writing/WRITING_ASSISTANT.md    # Orchestration
+4. writing/AGENT_LOOP.md           # Review process
 5. Specific agents as needed      # See sections above
 ```
 
@@ -175,8 +175,8 @@
 # Reference all sections:
 1. CLAUDE.md / AGENTS.md          # Main entry point
 2. This file (FILE_MAP.md)        # Navigate to needed guides
-3. gpu_manager/* for training
-4. agents/* for paper writing
+3. training/* for training
+4. writing/* for paper writing
 ```
 
 ---
@@ -188,7 +188,7 @@
 ```
 Are you...
 ├─ Running GPU experiments?
-│  └─ See gpu_manager/ section above
+│  └─ See training/ section above
 │
 ├─ Writing an academic paper?
 │  ├─ Just starting / have notes?
@@ -213,7 +213,7 @@ Are you...
 │     └─ AGENT_METAREVIEWER.md
 │
 └─ Both GPU training AND paper writing?
-   └─ Reference both gpu_manager/ and agents/ as needed
+   └─ Reference both training/ and writing/ as needed
 ```
 
 ---

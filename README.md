@@ -15,13 +15,13 @@ This repository contains standardized documentation for AI coding agents (Claude
 - **AGENTS.md** / **CLAUDE.md** - Main instructions file (identical, for different AI platforms)
 - **FILE_MAP.md** - Complete index of all 25 guide files
 
-### GPU & Training Guides (`gpu_manager/`)
+### GPU & Training Guides (`training/`)
 - GPU job submission and scheduling
 - SLURM resource allocation (12 CPUs, 100GB RAM per GPU)
 - LLM optimization (vLLM, Unsloth, quantization)
 - Training best practices and autonomous watchers
 
-### Writing & Research Guides (`agents/`)
+### Writing & Research Guides (`writing/`)
 - NeurIPS academic writing style
 - Paper drafting and review loops
 - Citation verification
@@ -133,11 +133,11 @@ agent-docs/
 ├── FILE_MAP.md                         ← Complete index of all 25 guides
 ├── README.md                           ← This file
 ├── QUICK_START.md                      ← Setup guide
-├── gpu_manager/                        ← GPU & training guides
+├── training/                        ← GPU & training guides
 │   ├── TRAINING_AGENT_GUIDE.md        ├─ ML training best practices (661 lines)
 │   ├── LLM_OPTIMIZATION_GUIDE.md      ├─ vLLM, Unsloth, quantization (564 lines)
 │   └── GPU_MANAGER_REFERENCE.md       └─ Quick reference (74 lines)
-├── agents/                             ← Writing & research guides
+├── writing/                             ← Writing & research guides
 │   ├── STYLE_GUIDE.md                 ├─ NeurIPS academic writing (13KB)
 │   ├── WRITING_ASSISTANT.md           ├─ Drafting papers (13KB)
 │   ├── AGENT_LOOP.md                  ├─ Review & polish (24KB)
@@ -155,11 +155,11 @@ agent-docs/
 **Maintained by:** GPU Manager system at `/media/milkkarten/data/gpu_manager`
 
 **Update workflow:**
-1. Make changes to source docs in `/media/milkkarten/data/gpu_manager/docs/`
+1. Make changes to source docs in `/media/milkkarten/data/training/docs/`
 2. Copy updated files to this repo
 3. Commit and push
 4. Projects using submodules automatically get updates
 
 ## 📖 Full Documentation
 
-Complete GPU Manager documentation: `/media/milkkarten/data/gpu_manager/docs/INDEX.md`
+Complete GPU Manager documentation: `/media/milkkarten/data/training/docs/INDEX.md`
