@@ -27,17 +27,21 @@
 | **GPU_MANAGER_REFERENCE.md** | 74 | Quick reference for GPU job submission |
 | **TRAINING_AGENT_GUIDE.md** | 661 | ML training best practices, SLURM QoS, offline mode |
 | **LLM_OPTIMIZATION_GUIDE.md** | 564 | vLLM inference, Unsloth training, quantization |
+| **TRAINING_LOOP.md** | 650+ | Systematic experimentation workflow (hypothesis → test → full run → iterate) |
 
 **When to use:**
 - Submitting training jobs to GPU clusters
 - Optimizing LLM inference or fine-tuning
 - Understanding SLURM resource allocation
 - Setting up offline mode for compute nodes
+- Running systematic ML experiments with monitoring
 
 **Key topics covered:**
 - ✅ Resource selection (local-5090, Cynthia, Pikachu, della clusters)
 - ✅ SLURM QoS priority (1h/24h/72h time limits)
 - ✅ CPU/RAM allocation (12 CPUs, 100GB per GPU)
+- ✅ Training loop workflow (hypothesis → test → full run → iterate)
+- ✅ Real-time monitoring (error detection, GPU utilization, performance tracking)
 - ✅ vLLM (10-20x faster inference)
 - ✅ Unsloth (2-5x faster training)
 - ✅ Quantization strategies (4-bit, 8-bit, GPTQ, AWQ)
@@ -56,12 +60,13 @@
 |------|------|---------|
 | **STYLE_GUIDE.md** | 13KB | NeurIPS-quality academic writing principles |
 | **WRITING_ASSISTANT.md** | 13KB | Orchestrator for drafting papers from notes to submission |
-| **AGENT_LOOP.md** | 24KB | Review loop for polishing complete drafts |
+| **WRITING_LOOP.md** | 24KB | Systematic review loop for polishing complete drafts |
 
 **When to use:**
 - Writing academic papers (NeurIPS, ICML, ICLR style)
 - Need formal, scholarly prose
 - Want structured feedback and iteration
+- Iterative improvement of paper drafts
 
 ---
 
@@ -165,7 +170,7 @@
 1. CLAUDE.md / AGENTS.md          # Main entry point
 2. writing/STYLE_GUIDE.md          # Writing principles
 3. writing/WRITING_ASSISTANT.md    # Orchestration
-4. writing/AGENT_LOOP.md           # Review process
+4. writing/WRITING_LOOP.md           # Review process
 5. Specific agents as needed      # See sections above
 ```
 
@@ -195,7 +200,7 @@ Are you...
 │  │  └─ WRITING_ASSISTANT.md
 │  │
 │  ├─ Have complete draft to polish?
-│  │  └─ AGENT_LOOP.md
+│  │  └─ WRITING_LOOP.md
 │  │
 │  ├─ Need to write specific section?
 │  │  └─ AGENT_SECTION_WRITER.md

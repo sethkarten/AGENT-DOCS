@@ -140,7 +140,7 @@ agent-docs/
 ├── writing/                             ← Writing & research guides
 │   ├── STYLE_GUIDE.md                 ├─ NeurIPS academic writing (13KB)
 │   ├── WRITING_ASSISTANT.md           ├─ Drafting papers (13KB)
-│   ├── AGENT_LOOP.md                  ├─ Review & polish (24KB)
+│   ├── WRITING_LOOP.md                  ├─ Review & polish (24KB)
 │   ├── AGENT_SECTION_WRITER.md        ├─ Write sections
 │   ├── AGENT_CITATION_CHECK.md        ├─ Verify citations
 │   ├── AGENT_FIGURE_PLANNER.md        ├─ Plan figures

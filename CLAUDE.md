@@ -79,5 +79,8 @@ curl http://localhost:8080/api/jobs/{job_id}
 **Writing & Research:**
 - Style Guide: `writing/STYLE_GUIDE.md` - NeurIPS academic writing
 - Writing Assistant: `writing/WRITING_ASSISTANT.md` - Drafting papers
-- Review Loop: `writing/AGENT_LOOP.md` - Polishing drafts
+- Review Loop: `writing/WRITING_LOOP.md` - Polishing drafts
 - See [FILE_MAP.md](FILE_MAP.md) for complete index (19 writing guides)
+
+**Training Workflow:**
+- Training Loop: `training/TRAINING_LOOP.md` - Systematic experimentation workflow
