@@ -175,7 +175,7 @@ For each section:
 
 ```
 When draft is complete:
-→ Transition to AGENT_LOOP.md (Review system)
+→ Transition to WRITING_LOOP.md (Review system)
 → Run quality checks
 → Simulate reviews
 → Iterate to acceptance

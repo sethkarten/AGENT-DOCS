@@ -152,14 +152,15 @@ agent-docs/
 
 ## 🛠️ Maintenance
 
-**Maintained by:** GPU Manager system at `/media/milkkarten/data/gpu_manager`
+**Maintained by:** GPU Manager system
 
 **Update workflow:**
-1. Make changes to source docs in `/media/milkkarten/data/training/docs/`
-2. Copy updated files to this repo
-3. Commit and push
-4. Projects using submodules automatically get updates
+1. GPU Manager docs: Run `update_from_source.sh` to sync from GPU Manager source
+2. Writing guides: Edit files in `writing/` directory directly
+3. Commit and push changes
+4. Projects using git clone can pull updates
 
-## 📖 Full Documentation
+## 📖 Source Documentation
 
-Complete GPU Manager documentation: `/media/milkkarten/data/training/docs/INDEX.md`
+- GPU Manager source: `/media/milkkarten/data/gpu_manager/docs/`
+- Writing guides: Maintained in this repo (`writing/`)

@@ -226,10 +226,14 @@ Are you...
 ## 📊 Statistics
 
 **Total Documentation:**
-- **25 files** (~1,900 lines total)
-- **GPU Guides:** 3 files (1,299 lines)
-- **Writing Guides:** 19 files (~600+ lines)
-- **Meta Docs:** 3 files (README, QUICK_START, FILE_MAP)
+- **29 markdown files** (6 core + 4 training + 19 writing)
+- **Core Docs:** 6 files (AGENTS.md, CLAUDE.md, FILE_MAP.md, README.md, QUICK_START.md, INSTALL.md)
+- **Training Guides:** 4 files (~2,000 lines)
+  - GPU_MANAGER_REFERENCE.md (74 lines)
+  - TRAINING_AGENT_GUIDE.md (661 lines)
+  - LLM_OPTIMIZATION_GUIDE.md (564 lines)
+  - TRAINING_LOOP.md (673 lines)
+- **Writing Guides:** 19 files (~1,900 lines)
 
 **Coverage:**
 - ✅ GPU scheduling and training optimization
