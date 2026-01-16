@@ -1,15 +1,32 @@
 # Agent Documentation
 
-**Shared AI agent instructions for GPU scheduling across research projects**
+**Shared AI agent instructions for GPU scheduling and academic writing**
 
 ## 🎯 Purpose
 
-This repository contains standardized documentation for AI coding agents (Claude Code, OpenAI Codex, etc.) to understand how to submit GPU training jobs across your infrastructure.
+This repository contains standardized documentation for AI coding agents (Claude Code, OpenAI Codex, Cursor, etc.) to:
+- Submit GPU training jobs across your infrastructure
+- Write NeurIPS-quality academic papers
+- Navigate comprehensive guides for both domains
 
 ## 📦 What's Included
 
-- **AGENTS.md** - Main instructions file that AI agents read
-- **gpu_manager/** - Detailed guides for training and optimization
+### Core Entry Points
+- **AGENTS.md** / **CLAUDE.md** - Main instructions file (identical, for different AI platforms)
+- **FILE_MAP.md** - Complete index of all 25 guide files
+
+### GPU & Training Guides (`gpu_manager/`)
+- GPU job submission and scheduling
+- SLURM resource allocation (12 CPUs, 100GB RAM per GPU)
+- LLM optimization (vLLM, Unsloth, quantization)
+- Training best practices and autonomous watchers
+
+### Writing & Research Guides (`agents/`)
+- NeurIPS academic writing style
+- Paper drafting and review loops
+- Citation verification
+- Figure planning
+- 19 specialized writing agents
 
 ## 🚀 Installation
 
@@ -25,7 +42,11 @@ git commit -m "Add agent documentation submodule"
 
 Then create a symlink in your project root:
 ```bash
-ln -s agent-docs/AGENTS.md .claude.md
+# For Claude Code
+ln -s agent-docs/CLAUDE.md .claude.md
+
+# For other agents (OpenAI Codex, Cursor, etc.)
+ln -s agent-docs/AGENTS.md .agents.md
 ```
 
 **To update docs in all projects:**
@@ -74,11 +95,20 @@ Point them to read `AGENTS.md` for GPU scheduling instructions.
 ## 📝 Usage
 
 Once installed, AI agents in your project will automatically know how to:
+
+**For GPU Training:**
 - Submit GPU training jobs to the scheduler
 - Choose appropriate resources (local-5090, Cynthia, Pikachu, della clusters)
-- Configure SLURM QoS for queue priority
+- Configure SLURM QoS for queue priority (1h/24h/72h)
 - Handle offline mode for SLURM compute nodes
 - Optimize for LLMs with vLLM and Unsloth
+
+**For Academic Writing:**
+- Write NeurIPS-quality formal prose
+- Draft papers from notes to submission
+- Verify citations and claims
+- Plan effective figures and tables
+- Navigate 19 specialized writing agents via FILE_MAP.md
 
 ## 🔄 Updating Documentation
 
@@ -107,12 +137,26 @@ git pull
 
 ```
 agent-docs/
-├── AGENTS.md                           ← Main agent instructions
+├── AGENTS.md                           ← Main instructions (generic)
+├── CLAUDE.md                           ← Main instructions (Claude Code)
+├── FILE_MAP.md                         ← Complete index of all 25 guides
 ├── README.md                           ← This file
-└── gpu_manager/
-    ├── TRAINING_AGENT_GUIDE.md        ← ML training best practices
-    ├── LLM_OPTIMIZATION_GUIDE.md      ← vLLM, Unsloth, quantization
-    └── GPU_MANAGER_REFERENCE.md       ← Quick reference
+├── QUICK_START.md                      ← Setup guide
+├── gpu_manager/                        ← GPU & training guides
+│   ├── TRAINING_AGENT_GUIDE.md        ├─ ML training best practices (661 lines)
+│   ├── LLM_OPTIMIZATION_GUIDE.md      ├─ vLLM, Unsloth, quantization (564 lines)
+│   └── GPU_MANAGER_REFERENCE.md       └─ Quick reference (74 lines)
+├── agents/                             ← Writing & research guides
+│   ├── STYLE_GUIDE.md                 ├─ NeurIPS academic writing (13KB)
+│   ├── WRITING_ASSISTANT.md           ├─ Drafting papers (13KB)
+│   ├── AGENT_LOOP.md                  ├─ Review & polish (24KB)
+│   ├── AGENT_SECTION_WRITER.md        ├─ Write sections
+│   ├── AGENT_CITATION_CHECK.md        ├─ Verify citations
+│   ├── AGENT_FIGURE_PLANNER.md        ├─ Plan figures
+│   └── ... (13 more agents)           └─ See FILE_MAP.md
+└── scripts/
+    ├── update_from_source.sh          ← Sync GPU docs from source
+    └── install_to_project.sh          ← Install to projects
 ```
 
 ## 🛠️ Maintenance
