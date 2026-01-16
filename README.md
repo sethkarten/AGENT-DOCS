@@ -30,56 +30,47 @@ This repository contains standardized documentation for AI coding agents (Claude
 
 ## 🚀 Installation
 
-### Option 1: Git Submodule (Recommended)
+### Simple Clone (Recommended)
 
-**Keeps docs synced with updates:**
+**Clone the repo into your project:**
 
 ```bash
 cd ~/Research/your-project
-git submodule add git@github.com:YOUR_USERNAME/agent-docs.git agent-docs
-git commit -m "Add agent documentation submodule"
+git clone git@github.com:YOUR_USERNAME/agent-docs.git
 ```
 
-Then create a symlink in your project root:
+**Then copy the main file to your project root:**
+
 ```bash
 # For Claude Code
-ln -s agent-docs/CLAUDE.md .claude.md
+cp agent-docs/CLAUDE.md .claude.md
 
-# For other agents (OpenAI Codex, Cursor, etc.)
-ln -s agent-docs/AGENTS.md .agents.md
+# For OpenAI Codex / Cursor
+cp agent-docs/AGENTS.md .agents.md
 ```
 
-**To update docs in all projects:**
-```bash
-cd ~/Research/your-project
-git submodule update --remote agent-docs
-```
+**To update later:**
 
-### Option 2: Direct Clone
-
-**Simpler but requires manual updates:**
-
-```bash
-cd ~/Research/your-project
-git clone git@github.com:YOUR_USERNAME/agent-docs.git agent-docs
-ln -s agent-docs/AGENTS.md .claude.md
-```
-
-**To update:**
 ```bash
 cd ~/Research/your-project/agent-docs
 git pull
+
+# Then re-copy if you want the latest
+cd ..
+cp agent-docs/CLAUDE.md .claude.md
 ```
 
-### Option 3: Copy Files
+### Alternative: Direct File Copy
 
-**For projects that don't need updates:**
+**If you don't want the full repo:**
 
 ```bash
 cd ~/Research/your-project
-curl -O https://raw.githubusercontent.com/YOUR_USERNAME/agent-docs/main/AGENTS.md
-mv AGENTS.md .claude.md
+curl -O https://raw.githubusercontent.com/YOUR_USERNAME/agent-docs/main/CLAUDE.md
+mv CLAUDE.md .claude.md
 ```
+
+Note: You'll have all guides available in `agent-docs/` directory if you clone the full repo.
 
 ## 🤖 AI Agent Integration
 

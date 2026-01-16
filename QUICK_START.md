@@ -20,23 +20,23 @@ REPO_URL="git@github.com:YOUR_USERNAME/agent-docs.git"
 
 ## 3️⃣ Install to Your Projects
 
-### Using Submodule (Recommended)
+### Clone to Single Project
 
 ```bash
 cd ~/Research/your-project
-/media/milkkarten/data/agent-docs-repo/install_to_project.sh . submodule
-git add .
-git commit -m "Add agent documentation"
+git clone git@github.com:YOUR_USERNAME/agent-docs.git
+cp agent-docs/CLAUDE.md .claude.md
 ```
 
-### Batch Install to All Projects
+### Install to All Projects
 
 ```bash
-#!/bin/bash
 for project in ~/Research/*/; do
     if [ -d "$project/.git" ]; then
-        echo "Installing to $(basename $project)..."
-        /media/milkkarten/data/agent-docs-repo/install_to_project.sh "$project" submodule
+        cd "$project"
+        git clone git@github.com:YOUR_USERNAME/agent-docs.git 2>/dev/null || (cd agent-docs && git pull)
+        cp agent-docs/CLAUDE.md .claude.md
+        echo "✓ Installed to $(basename $project)"
     fi
 done
 ```
@@ -56,15 +56,16 @@ Ask Claude: "How do I submit a GPU training job?"
 When GPU Manager docs change:
 
 ```bash
-# 1. Update this repo
+# 1. Update the main repo
 cd /media/milkkarten/data/agent-docs-repo
 ./update_from_source.sh
 git add . && git commit -m "Update docs" && git push
 
-# 2. Update in projects (if using submodules)
-cd ~/Research/your-project
-git submodule update --remote agent-docs
-git commit -am "Update agent docs"
+# 2. Update in projects
+cd ~/Research/your-project/agent-docs
+git pull
+cd ..
+cp agent-docs/CLAUDE.md .claude.md  # Re-copy if needed
 ```
 
 ## 📊 File Overview
